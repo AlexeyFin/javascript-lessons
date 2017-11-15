@@ -6,18 +6,34 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<!-- <select name="" id="mySelect" onchange="fun1()">
-		<option value="">Apple</option>
-		<option value="">Orange</option>
-		<option value="">Pineapple</option>
-		<option value="">Banana</option>
-	</select> -->
+	<div class="block1">
+		<p>Верхний левый угол:
+			<input class="rangeinp" type="range" id="rtl" min="0" max="1000" value="0" oninput="fun1()">
+			<input type="text" id="ttl" value="0 px">
+		</p>
+		<p>Верхний правый угол:
+			<input class="rangeinp" type="range" id="rtr" min="0" max="1000" value="0" oninput="fun1()">
+			<input type="text" id="ttr" value="0 px">
+		</p>
+		<p>Нижний правый угол:
+			<input class="rangeinp" type="range" id="rbr" min="0" max="1000" value="0" oninput="fun1()">
+			<input type="text" id="tbr" value="0 px">
+		</p>
+		<p>Нижний левый угол:
+			<input class="rangeinp" type="range" id="rbl" min="0" max="1000" value="0" oninput="fun1()">
+			<input type="text" id="tbl" value="0 px">
+		</p>
+
+		<div id="block1"></div>
+
+		
+
+	</div>
 
 
 
-	<input type="range" min="0" max="100" step="1" oninput="fun1()" id="r1">
-	<div id="test"></div>
-	
+
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js" ></script>
