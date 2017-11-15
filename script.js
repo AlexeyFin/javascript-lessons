@@ -1,23 +1,13 @@
 
-// function check() {
-	// 	var chbox=document.getElementById('one');
-// 	if (chbox.checked) {
-// 		alert("checked");
-// 	}else{
-// 		alert("dont checked");
-// 	}
+
+// function fun1() {
+// 	var sel = document.getElementById('mySelect').selectedIndex;
+// 	var options = document.getElementById('mySelect').options;
+// 	alert('Choosed option ' +options[sel].text );
 // }
 
-
 function fun1() {
-	var radi = document.getElementsByName('r1');
-
-	for (var i =  0; i < radi.length; i++) {
-		
-		if (radi[i].checked) {
-			alert("Choosed "   +i+   " element");
-		}
-
-	}
+	var rng = document.getElementById('r1');
+	var div=document.getElementById('test');
+	div.style.width=(rng.value * 3)+'px';
 }
-
